@@ -2,14 +2,14 @@
 
 **cara pakai :** 
 
-1.git clone ...
+$ git clone ...
 
-2.cd my-app
+$ cd my-app
 
-3.npm install
+$ npm install
 
-4.npm start
+$ npm start
 
 **cara update terbaru dari repo :**
 
-1.git pull origin main
+$ git pull origin main
