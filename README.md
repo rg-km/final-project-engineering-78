@@ -1,6 +1,6 @@
 ﻿# final-project-engineering-78
 
-**cara pakai :** 
+**cara pakai :**
 
 $ git clone ...
 
@@ -13,3 +13,7 @@ $ npm start
 **cara update terbaru dari repo :**
 
 $ git pull origin main
+
+Kalau ada error saat pembaruan bisa
+
+$ npm install
