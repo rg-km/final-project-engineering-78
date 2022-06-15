@@ -1,8 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-import "bootstrap/dist/css/bootstrap.min.css";
-=======
->>>>>>> home
 import "./bootstrap.min.css";
 import ReactDOM from "react-dom/client";
 import "./index.css";
