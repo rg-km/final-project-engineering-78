@@ -4,6 +4,7 @@ import "@popperjs/core";
 import "./bootstrap.min.css";
 import Home from "./Pages/Home";
 import Daftar from "./Pages/Daftar";
+import Profile from "./Pages/Profile";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Daftar />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

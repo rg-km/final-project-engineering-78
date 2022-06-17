@@ -86,6 +86,7 @@ const NavigationBar = () => {
                 </Modal>
                 <Nav.Link href="#action1">Daftar</Nav.Link>
                 <Nav.Link href="#action2">Leaderboard Pustaka</Nav.Link>
+                <Link to="/profile">Profile Saya</Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
