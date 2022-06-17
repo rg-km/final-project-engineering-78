@@ -117,22 +117,22 @@ func (api *API) logout(w http.ResponseWriter, req *http.Request) {
 	w.Write([]byte("logged out"))
 }
 
-func (api *API) register (w http.ResponseWriter, r *http.Request) {
-	api.AllowOrigin(w, r)
-	var user User
-	err := json.NewDecoder(r.Body).Decode(&user)
-	if err != nil {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
+// func (api *API) register (w http.ResponseWriter, r *http.Request) {
+// 	api.AllowOrigin(w, r)
+// 	var user User
+// 	err := json.NewDecoder(r.Body).Decode(&user)
+// 	if err != nil {
+// 		w.WriteHeader(http.StatusBadRequest)
+// 		return
+// 	}
 
-	err = api.usersRepo.Register(user.Username, user.Password)
-	if err != nil {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
+// 	err = api.usersRepo.Register(user.Username, user.Password)
+// 	if err != nil {
+// 		w.WriteHeader(http.StatusBadRequest)
+// 		return
+// 	}
 
-	w.WriteHeader(http.StatusOK)
-}
+// 	w.WriteHeader(http.StatusOK)
+// }
 
 
