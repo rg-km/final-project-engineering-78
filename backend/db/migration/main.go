@@ -58,7 +58,7 @@ func main() {
 	status boolean not null
 	foreign key(id_buku) references buku(id_buku)
 	foreign key(id_user) references users(id_user)
-	);
+);
 
 	CREATE TABLE IF NOT EXISTS denda (
 	id_denda integer not null primary key AUTOINCREMENT,
@@ -66,12 +66,7 @@ func main() {
 	jumlah_denda integer not null,
 	foreign key(id_peminjaman) references peminjaman(id_peminjaman)
 	foreign key(id_user) references users(id_user)
-);
-
-
-
-	) 
-
+);)
 
 
 INSERT INTO users(username, password, role, loggedin) VALUES
