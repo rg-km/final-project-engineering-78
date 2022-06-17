@@ -3,15 +3,17 @@ import "./App.css";
 import "@popperjs/core";
 import "./bootstrap.min.css";
 import Home from "./Pages/Home";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Daftar from "./Pages/Daftar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <div>
-        <Home />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Daftar />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

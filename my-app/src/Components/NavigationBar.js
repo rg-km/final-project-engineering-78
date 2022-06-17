@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   Container,
@@ -76,7 +77,7 @@ const NavigationBar = () => {
                       <Form.Group className="text-center">
                         <p>
                           Belum punya akun?
-                          <Nav.Link to="/Daftar">Daftar</Nav.Link>
+                          <Link to="/register">Daftar</Link>
                         </p>
                       </Form.Group>
                     </Form>
