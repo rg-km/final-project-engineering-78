@@ -8,8 +8,10 @@ import {
   Button,
   Offcanvas,
   Modal,
+  NavLink,
 } from "react-bootstrap";
 //import Daftar from "../Pages/Daftar";
+import {Link} from "react-router-dom";
 const NavigationBar = () => {
   const [show, setShow] = useState(false);
 
@@ -85,6 +87,7 @@ const NavigationBar = () => {
                 </Modal>
                 <Nav.Link href="#action1">Daftar</Nav.Link>
                 <Nav.Link href="#action2">Leaderboard Pustaka</Nav.Link>
+                <Link href="/profile">Profile</Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
