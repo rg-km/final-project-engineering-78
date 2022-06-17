@@ -23,50 +23,49 @@ func main() {
 );
 
 
-	CREATE TABLE IF NOT EXISTS admin (
-	id_admin integer not null primary key AUTOINCREMENT,
-	username varchar(255) not null,
-	password varchar(255) not null,
-	role varchar(255) not null,
-	loggedin boolean not null
-);
 
 	CREATE TABLE IF NOT EXISTS buku (
 	id_buku integer not null primary key AUTOINCREMENT,
-	ISBN integer not null primary key AUTOINCREMENT,
+	ISBN integer not null,
 	judul varchar(255) not null,
 	pengarang varchar(255) not null,
 	penerbit varchar(255) not null,
 	tahun_terbit integer not null,
 	jumlah_buku integer not null,
-	kategori varchar(255) not null
+	kategori varchar(255) not null,
 	description varchar(255) not null
 );
 
 	CREATE TABLE IF NOT EXISTS peminjaman (
 	id_peminjaman integer not null primary key AUTOINCREMENT,
+	id_buku integer not null,
+	id_user integer not null,
 	tanggal_pinjam date not null,
 	tanggal_kembali date not null,
-	status boolean not null
-	foreign key(id_buku) references buku(id_buku)
+	status boolean not null,
+	foreign key(id_buku) references buku(id_buku),
 	foreign key(id_user) references users(id_user)
 );
 
 	CREATE TABLE IF NOT EXISTS pengembalian (
 	id_pengembalian integer not null primary key AUTOINCREMENT,
 	tanggal_kembali date not null,
-	status boolean not null
-	foreign key(id_buku) references buku(id_buku)
+	id_buku integer not null,
+	id_user integer not null,
+	status boolean not null,
+	foreign key(id_buku) references buku(id_buku),
 	foreign key(id_user) references users(id_user)
 );
 
 	CREATE TABLE IF NOT EXISTS denda (
 	id_denda integer not null primary key AUTOINCREMENT,
+	id_peminjaman integer not null,
+	id_user integer not null,
 	tanggal_denda date not null,
 	jumlah_denda integer not null,
-	foreign key(id_peminjaman) references peminjaman(id_peminjaman)
+	foreign key(id_peminjaman) references peminjaman(id_peminjaman),
 	foreign key(id_user) references users(id_user)
-);)
+);
 
 
 INSERT INTO users(username, password, role, loggedin) VALUES
@@ -75,7 +74,7 @@ INSERT INTO users(username, password, role, loggedin) VALUES
     ('dito', '2552', 'employee', false),
 	('aris', '2910', 'admin', false);
 
-`)
+`);
 
 	if err != nil {
 		panic(err)

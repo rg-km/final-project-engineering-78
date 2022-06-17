@@ -15,8 +15,8 @@ func NewUserRepository(db *sql.DB) *UserRepository {
 
 func (u *UserRepository) FetchUserByID(id int64) (User, error) {
 	var user User
-	sqlStatement  := `SELECT id, username, password, role, loggedin FROM users
-	WHERE id = ?`
+	sqlStatement  := `SELECT id_user, username, password, role, loggedin FROM users
+	WHERE id_user = ?`
 
 	row := u.db.QueryRow(sqlStatement)
 	err := row.Scan(
@@ -40,7 +40,7 @@ func (u *UserRepository) FetchUsers() ([]User, error) {
 
 	//TODO: add sql statement here
 	//HINT: join table cart_items and products
-	sqlStatement = `SELECT id, username, password, role, loggedin FROM users`
+	sqlStatement = `SELECT id_user, username, password, role, loggedin FROM users`
 
 	rows, err := u.db.Query(sqlStatement)
 	if err != nil {

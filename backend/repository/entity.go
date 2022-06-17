@@ -10,15 +10,6 @@ type User struct {
 	Token    string `db:"token"`
 }
 
-type admin struct {
-	ID       int64  `db:"id"`
-	Username string `db:"username"`
-	Password string `db:"password"`
-	Role     string `db:"role"`
-	Loggedin bool   `db:"loggedin"`
-	Token    string `db:"token"`
-}
-
 type buku struct {
 	ID       int64  `db:"id"`
 	Judul    string `db:"judul"`
