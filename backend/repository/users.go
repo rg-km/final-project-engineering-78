@@ -79,11 +79,11 @@ func (u *UserRepository) Login(username string, password string) (*string, error
 			if user.Password == password {
 				return &user.Username, nil
 			} else {
-				return nil, errors.New("Login Failed")
+				return nil, errors.New("email atau password anda tidak valid")
 			}
 		}
 	}
-	return nil, errors.New("Login Failed") // TODO: replace this
+	return nil, errors.New("email atau password anda tidak valid") // TODO: replace this
 }
 
 func (u *UserRepository) InsertUser(username string, password string, role string, loggedin bool) error {
