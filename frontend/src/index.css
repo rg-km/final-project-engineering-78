@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,3 +21,28 @@ p, li, a {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
+=======
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen" "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue" sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New" monospace;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+li,
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+>>>>>>> a4e7003163444944597348f5e776e4f16ee2fd79
