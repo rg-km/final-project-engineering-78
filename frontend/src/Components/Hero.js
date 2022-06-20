@@ -1,16 +1,30 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Image, Card, CardGroup } from "react-bootstrap";
 
 const Hero = () => {
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-12">
-          <div className="card">
-            <div className="card-header"></div>
-            <p allign="end">Editnya di Hero.js</p>
+          <div class="row justify-content-md-center">
+            <div class="col">
+              <Image src="./Logo/black.png" fluid />
+            </div>
+            <div class="col-md-auto">
+              <br></br>
+              <br></br>
+              <p class="text-center">
+                <h3>BANGUN MASA DEPANMU</h3>
+                <h3> DENGAN MEMBACA</h3>
+                Ayo telusuri buku di perpustakaan X
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div>
+        <br></br>
+        <br></br>
       </div>
       <div className="row">
         <div className="col-md-12">
