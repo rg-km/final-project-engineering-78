@@ -64,7 +64,7 @@ export const Footer = () => {
               </Col>
             </Row>
           </section>
-          <section>
+          <section className="pt-5">
             <Row>
               <Col>
                 <p className="text-center">&#169; 2022 Copyright: <a href="" className="text-reset fw-bold text-decoration-none">EasyPerpus.com</a></p>

@@ -6,6 +6,7 @@ import "../bootstrap.min.css";
 import NavigationBar from "../Components/NavigationBar";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
+import Beranda from "./Beranda";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <NavigationBar />
       <main>
         <Container>
-          <Hero />
+          <Beranda />
         </Container>
       </main>
       <Footer />
