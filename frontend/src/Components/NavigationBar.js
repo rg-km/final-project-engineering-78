@@ -21,7 +21,7 @@ const NavigationBar = () => {
     <Navbar key={expand} bg="light" expand={expand} className="mb-3">
       <Container fluid>
         <Nav>
-          <Navbar.Brand>
+          <Navbar.Brand className="">
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <>EasyPerpus</>
           </Navbar.Brand>
@@ -84,9 +84,15 @@ const NavigationBar = () => {
                   </Modal.Body>
                   <Modal.Footer className="text-center"></Modal.Footer>
                 </Modal>
-                <Nav.Link href="#action1">Daftar</Nav.Link>
-                <Nav.Link href="#action2">Leaderboard Pustaka</Nav.Link>
-                <Link to="/profile">Profile Saya</Link>
+                <Nav.Link href="/register">
+                  <i class="fa-solid fa-angle-right"></i> Daftar
+                </Nav.Link>
+                <Nav.Link href="/leaderboard">
+                  <i class="fa-solid fa-angle-right"></i> Leaderboard Pustaka
+                </Nav.Link>
+                <Link to="/profile">
+                  <i class="fa-solid fa-angle-right"></i> Profile Saya
+                </Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

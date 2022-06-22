@@ -118,6 +118,7 @@ h6 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
+  font-family: "Poppins", sans-serif;
 }
 .h1,
 h1 {
@@ -244,7 +245,7 @@ sup {
 }
 a {
   color: #4582ec;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #3768bd;
@@ -328,6 +329,8 @@ tr {
 }
 label {
   display: inline-block;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 button {
   border-radius: 0;

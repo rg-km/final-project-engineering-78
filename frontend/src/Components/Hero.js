@@ -1,159 +1,145 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Image, Card, CardGroup } from "react-bootstrap";
 
 const Hero = () => {
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-12">
-          <div className="card">
-            <div className="card-header"></div>
-            <p allign="end">Editnya di Hero.js</p>
+          <div class="row justify-content-md-center">
+            <div class="col">
+              <Image src="./Logo/black.png" fluid />
+            </div>
+            <div class="col-md-auto">
+              <br></br>
+              <br></br>
+              <p class="text-center">
+                <h3>BANGUN MASA DEPANMU</h3>
+                <h3> DENGAN MEMBACA</h3>
+                Ayo telusuri buku di EasyPerpus
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div>
+        <br></br>
+        <br></br>
       </div>
       <div className="row">
         <div className="col-md-12">
           <CardGroup>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/laskar-pelangi.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Laskar Pelangi</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Penulis :<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/bulan.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Bulan</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Penulis :Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/bumi.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Bumi</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/negeri-diujung-tanduk.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Negeri Di Ujung Tanduk</Card.Title>
                 <Card.Text>
-                  This card has supporting text below as a natural lead-in to
-                  additional content.{" "}
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/halo-koding.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Halo Koding</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
+                  Penulis : Hilman Ramadhan<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
           </CardGroup>
           <CardGroup>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/negeri-para-bedebah.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Negeri Para Bedebah</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/pulang-pergi.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Pulang Pergi</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/selamat-tinggal.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Selamat Tinggal</Card.Title>
                 <Card.Text>
-                  This card has supporting text below as a natural lead-in to
-                  additional content.{" "}
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/si-putih.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>Si Putih</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Img variant="top" src="./Buku/tentang-kamu.jpg" />
               <Card.Body>
-                <Card.Title>Card title</Card.Title>
+                <Card.Title>tentang Kamu</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Penulis : Tere Liye<br></br>
+                  Tersedia :<br></br>
+                  Tahun Terbit :
                 </Card.Text>
               </Card.Body>
-              <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </Card.Footer>
             </Card>
           </CardGroup>
         </div>
