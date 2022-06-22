@@ -1,0 +1,55 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-profile{
+    width:17%;
+    padding: 10px 0px 0px 100px;
+}
+.head{
+    flex-direction: row;
+    padding: 50px 0px 0px 90px;
+}
+.button-profile{
+    padding:10px;  
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+    margin: 10px 0px 0px 100px;
+}
+.tata{
+    display: flex;
+}
+.data{
+    padding-top: 90px;
+}
+.form {
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+}
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+  
+.ic1 {
+    margin-top: 40px;
+}
+.input {
+    background-color: #eee;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }

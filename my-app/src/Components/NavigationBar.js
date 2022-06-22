@@ -12,7 +12,6 @@ import {
   NavLink,
 } from "react-bootstrap";
 //import Daftar from "../Pages/Daftar";
-import {Link} from "react-router-dom";
 const NavigationBar = () => {
   const [show, setShow] = useState(false);
 
