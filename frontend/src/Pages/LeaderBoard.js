@@ -1,4 +1,5 @@
 import NavBarDaftar from "../Components/NavBarDaftar";
+import Footer from "../Components/Footer";
 const LeaderBoard = () => {
   return (
     <div className="container-fluid">
@@ -48,6 +49,10 @@ const LeaderBoard = () => {
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
     </div>
   );
 };
