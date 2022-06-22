@@ -7,6 +7,7 @@ const Profile = () =>{
     return(
         <>
         <h1>Profil Saya</h1>
+        <h3>Profile Setting</h3>
         </>
     )
 }
