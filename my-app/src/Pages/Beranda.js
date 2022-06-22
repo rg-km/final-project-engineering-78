@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import axios from 'axios'
 import { Card,
     CardGroup,
     Stack,
@@ -9,9 +10,30 @@ import { Card,
     Button,
 } from 'react-bootstrap';
 
-
 // to do next: nunggu api buku dan tambah animasi scrolling, responsive kalau bisa
 const Beranda = () => {
+
+    const [query, setQuery] = useState('')
+    const [loading, setLoading] = useState(false)
+    const [search, setSearch] = useState('')
+    const [bookList, setBookList] = useState([])
+
+    const searchBook = (event) => {
+        if (event.key === "Enter") {
+            // console.log("hello")
+            // try {
+            //     const res = await axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyBLJZPpZGx-vdQFizW2wEGZaMVWQwNrO0c')
+            //     const {data} = res
+            //     setBookList(data.data)
+            // } catch(err) {
+            //     console.log(err)
+            // }
+            axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyBLJZPpZGx-vdQFizW2wEGZaMVWQwNrO0c')
+            .then(res => setBookList(res.data.items))
+            .catch(err => console.log(err))
+        }
+    }
+
     return (
         <div>
                 <header className="pt-3 pb-5">
@@ -31,6 +53,9 @@ const Beranda = () => {
                             placeholder="Buku apa yang ingin kamu cari?"
                             className="me-2"
                             aria-label="Search"
+                            value={search}
+                            onChange={e => setSearch(e.target.value)}
+                            onKeyPress={searchBook}
                             />
                             <Button variant="outline-success">Search</Button>
                         </Form>
