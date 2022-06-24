@@ -4,10 +4,13 @@ import "@popperjs/core";
 import "../bootstrap.min.css";
 // import {Button, Image} from "react-bootstrap";
 import "../Style/Profile.css";
+import Footer from "../Components/Footer";
+import NavBarDaftar from "../Components/NavBarDaftar";
 
 const Profile = () =>{
     return(
         <>
+    <NavBarDaftar />
     <div className="tata">
         <div className="flex-container">
             <h3 className="head">Profil Saya</h3>
@@ -65,7 +68,10 @@ const Profile = () =>{
             </div>
         </div>
     </div>
-        </>
+    <br></br>
+    <br></br>
+    <Footer/>
+    </>
     )
 }
 export default Profile;
