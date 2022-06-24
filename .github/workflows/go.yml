@@ -1,25 +1,38 @@
-name: Go
+# action name
+name: go-test
 
+# triggered when push to main branch
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "master" ]
+    branches: [main]
 
+# jobs name run-go-test
 jobs:
+  run-go-test:
+    strategy:
+      matrix:
+        go: ["1.17.x", "1.18.x"]
+        platforms: [ubuntu-latest, macos-latest, windows-latest]
 
-  build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.platforms }} # run at VM
+
     steps:
-    - uses: actions/checkout@v3
+      # checkout repository to the runner
+      - name: checkout repo
+        uses: actions/checkout@v3
 
-    - name: Set up Go
-      uses: actions/setup-go@v3
-      with:
-        go-version: 1.18
+      # install go inside the VM
+      - name: install go
+        uses: actions/setup-go@v3
+        with:
+          go-version: ${{ matrix.go }}
 
-    - name: Build
-      run: go build -v ./...
+      # check go version
+      - name: check go version
+        run: go version
 
-    - name: Test
-      run: go test -v ./...
+      # run go test
+      - name: go test
+        run: |
+          cd backend
+          go test ./...
