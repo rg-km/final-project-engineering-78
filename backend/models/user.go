@@ -1,5 +1,5 @@
 package models
-type User struct {
+type user struct {
 	ID       int64  `db:"id"`
 	Username string `db:"username"`
 	Password string `db:"password"`

@@ -3,8 +3,8 @@ package repository
 import (
 	"database/sql"
 
-	"github.com/rg-km/final-project-engineering-78/backend/model"
-	"github.com/rg-km/final-project-engineering-78/backend/api"
+		"github.com/rg-km/final-project-engineering-78/backend/model"
+		"github.com/rg-km/final-project-engineering-78/backend/db"
 	
 )
 
@@ -22,8 +22,9 @@ type buku struct {
 	db *sql.DB
 }
 
-func NewUserRepository (db *sql.DB) buku {
+func NewBukuRepository (db *sql.DB) buku {
 	return buku{db}
+}
 
 //GetAllBuku
 func (b *buku) GetAllBuku() ([]*model.Buku, error) {
