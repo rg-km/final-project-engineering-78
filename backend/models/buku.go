@@ -1,5 +1,4 @@
 package models
-
 type buku struct {
 	ID       int64  `db:"id_buku"`
 	ISBN int64 `db:"isbn_buku"`
