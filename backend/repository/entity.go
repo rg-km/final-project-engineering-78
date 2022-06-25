@@ -1,35 +1,31 @@
 package repository
+	type User struct {
+		Id int `db:"id"`
+		Nim int `db:"nim"`
+		Username string `db:"nama"`
+		kelamin string `db:"kelamin"`
+		Email string `db:"email"`
+		Jurusan string `db:"jurusan"`
+		Fakultas string `db:"fakultas"`
+		NoHp string `db:"noHp"`
+		Password string `db:"password"`
+		Role string `db:"role"`
+		Logged bool `db:"logged"`
+		Gambar string `db:"gambar"`
+	}
 
-
-type User struct {
-	ID       int64  `db:"id"`
-	Username string `db:"username"`
-	Password string `db:"password"`
-	Role     string `db:"role"`
-	Loggedin bool   `db:"loggedin"`
-	Token    string `db:"token"`
-}
-
-type buku struct {
-	ID       int64  `db:"id"`
-	Judul    string `db:"judul"`
-	Penerbit string `db:"penerbit"`
-	Pengarang string `db:"pengarang"`
-	Tahun    string `db:"tahun"`
-	Stok     string `db:"stok"`
-	description string `db:"description"`
-}
-
-type peminjaman struct {
-	ID       int64  `db:"id"`
-	Nama     string `db:"nama"`
-	Judul    string `db:"judul"`
-	Status   string `db:"status"`
-	tanggal_pinjam string `db:"tanggalPinjam"`
-	tanggal_kembali string `db:"tanggalKembali"`
-}
-
-
+	type Buku struct {
+		ID          int    `db:"id"`
+		ISBN        int    `db:"isbn"`
+		Judul       string `db:"judul"`
+		Pengarang   string `db:"pengarang"`
+		Penerbit    string `db:"penerbit"`
+		Tahun       string `db:"tahun"`
+		Stok        int    `db:"stok"`
+		KotaTerbit  string `db:"kotaTerbit"`
+		Deskripsi   string `db:"deskripsi"`
+		Gambar      string `db:"gambar"`
+	}
 	
 
 

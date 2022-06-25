@@ -2,8 +2,22 @@ package repository
 
 import (
 	"database/sql"
-	"errors"
 )
+
+// type User struct {
+// 	Id int `db:"id" json:"id"`
+// 	Nim int `db:"nim" json:"nim"`
+// 	Username string `db:"username" json:"username"`
+// 	Kelamin string `db:"kelamin" json:"kelamin"`
+// 	Email string `db:"email" json:"email"`
+// 	Jurusan string `db:"jurusan" json:"jurusan"`
+// 	Fakultas string `db:"fakultas" json:"fakultas"`
+// 	NoHp string `db:"noHp" json:"noHp"`
+// 	Password string `db:"password" json:"password"`
+// 	Role string `db:"role" json:"role"`
+// 	Logged bool `db:"logged" json:"logged"`
+// 	Gambar string `db:"gambar" json:"gambar"`
+// }
 
 type UserRepository struct {
 	db *sql.DB
@@ -13,77 +27,56 @@ func NewUserRepository(db *sql.DB) *UserRepository {
 	return &UserRepository{db: db}
 }
 
-func (u *UserRepository) FetchUserByID(id int64) (User, error) {
+//FetchUserByID
+func (u *UserRepository) FetchUserByID(id int) (*User, error) {
 	var user User
-	sqlStatement  := `SELECT id_user, username, password, role, loggedin FROM users
-	WHERE id_user = ?`
+	sqlStatement := `SELECT * FROM users WHERE id = ?`
 
-	row := u.db.QueryRow(sqlStatement)
-	err := row.Scan(
-		&user.ID,
-		&user.Username,
-		&user.Password,
-		&user.Role,
-		&user.Loggedin,
-	)
-
+	row := u.db.QueryRow(sqlStatement, id)
+	err := row.Scan(&user.Id, &user.Nim, &user.Username, &user.kelamin, &user.Email, &user.Jurusan, &user.Fakultas, &user.NoHp, &user.Password, &user.Role, &user.Logged, &user.Gambar)
 	if err != nil {
-		return User{}, err
+		return nil, err
 	}
-
-	return user, nil // TODO: replace this
+	return &user, nil
 }
 
+
+//FetchUsers
 func (u *UserRepository) FetchUsers() ([]User, error) {
-	var sqlStatement string
 	var users []User
-
-	//TODO: add sql statement here
-	//HINT: join table cart_items and products
-	sqlStatement = `SELECT id_user, username, password, role, loggedin FROM users`
-
-	rows, err := u.db.Query(sqlStatement)
+	rows, err := u.db.Query("SELECT * FROM users")
 	if err != nil {
-		return nil , err
+		return nil, err
 	}
 	defer rows.Close()
 	for rows.Next() {
 		var user User
-
-		err := rows.Scan(
-			&user.ID,
-			&user.Username,
-			&user.Password,
-			&user.Role,
-			&user.Loggedin,
-		)
+		err := rows.Scan(&user.Id, &user.Nim, &user.Username, &user.kelamin, &user.Email, &user.Jurusan, &user.Fakultas, &user.NoHp, &user.Password, &user.Role, &user.Logged, &user.Gambar)
 		if err != nil {
 			return nil, err
 		}
 		users = append(users, user)
 	}
-
-	return users, nil // TODO: replace this
+	return users, nil
 }
 
-func (u *UserRepository) Login(username string, password string) (*string, error) {
 
-	users, err := u.FetchUsers()
+//login 
+func (u *UserRepository) Login(username string, password string) (*string, error) {
+	sqlStatement := `SELECT role FROM users WHERE username = ? AND password = ?`
+
+	row := u.db.QueryRow(sqlStatement, username, password)
+	var role string
+
+	err := row.Scan(
+		&role,
+	)
 
 	if err != nil {
 		return nil, err
 	}
-
-	for _, user := range users {
-		if user.Username == username {
-			if user.Password == password {
-				return &user.Username, nil
-			} else {
-				return nil, errors.New("email atau password anda tidak valid")
-			}
-		}
-	}
-	return nil, errors.New("email atau password anda tidak valid") // TODO: replace this
+	
+	return &role, nil
 }
 
 func (u *UserRepository) InsertUser(username string, password string, role string, loggedin bool) error {
@@ -94,7 +87,7 @@ func (u *UserRepository) InsertUser(username string, password string, role strin
 	if err != nil {
 		return err
 	}
-	return nil // TODO: replace this
+	return nil 
 }
 
 func (u *UserRepository) FetchUserRole(username string) (*string, error) {
@@ -111,5 +104,5 @@ func (u *UserRepository) FetchUserRole(username string) (*string, error) {
 		return nil, err
 	}
 
-	return &role, nil // TODO: replace this
+	return &role, nil
 }
