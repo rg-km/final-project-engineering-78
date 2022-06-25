@@ -43,33 +43,35 @@ const Buku = () => {
 
     return (
         <div>
-            {
-                bookList?.map((item) => {
-                    let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail
-                    return (
-                        <>
-                            <CardGroup style={{ width: '16rem' }}>
-                                <Link to="/deskripsi">
-                                    <BookCard 
-                                        key = {item.id}
-                                        id = {item.id}
-                                        thumbnail = {thumbnail}
-                                        title={item.volumeInfo.title}
-                                        subtitle={item.volumeInfo.subtitle}
-                                        author={item.volumeInfo.author}
-                                        Image={item.volumeInfo.imageLinks.smallThumbnail}
-                                        desc={item.volumeInfo.description}
-                                        publishDate={item.volumeInfo.publishedDate}
-                                        publisher={item.volumeInfo.publisher}
-                                        language={item.volumeInfo.language}
-                                        pageCount={item.volumeInfo.pageCount}
-                                    />     
-                                </Link>
-                            </CardGroup>
-                        </>
-                    )
-                })
-            }
+            <Stack direction="horizontal" className="my-auto">
+                {  
+                    bookList?.map((item) => {
+                        let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail
+                        return (
+                            <>
+                                <CardGroup style={{ width: '16rem'}}>
+                                    <Link to="/deskripsi" style={{ color: 'black'}} onClick={() => console.log("haii")}>
+                                        <BookCard 
+                                            key = {item.id}
+                                            id = {item.id}
+                                            thumbnail = {thumbnail}
+                                            title={item.volumeInfo.title}
+                                            subtitle={item.volumeInfo.subtitle}
+                                            author={item.volumeInfo.author}
+                                            Image={item.volumeInfo.imageLinks.smallThumbnail}
+                                            desc={item.volumeInfo.description}
+                                            publishDate={item.volumeInfo.publishedDate}
+                                            publisher={item.volumeInfo.publisher}
+                                            language={item.volumeInfo.language}
+                                            pageCount={item.volumeInfo.pageCount}
+                                        />     
+                                    </Link>
+                                </CardGroup>
+                            </>
+                        )
+                    })
+                }
+            </Stack>
         </div>
     );
 };

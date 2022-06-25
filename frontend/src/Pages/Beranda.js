@@ -65,66 +65,7 @@ const Beranda = () => {
                     </section>
                     <section className="pt-5">
                         <h3 className="text-center my-5">Koleksi Baru dan Diperbarui</h3>
-                        <Stack direction="horizontal" gap={2}>
-                            <CardGroup>
-                                <Card className="mx-2">
-                                    <Card.Img variant="top" src="holder.js/100px160" />
-                                    <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
-                                        <Card.Text>
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                        </Card.Text>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <small className="text-muted">Last updated 3 mins ago</small>
-                                    </Card.Footer>
-                                </Card>
-                                <Card className="mx-2">
-                                    <Card.Img variant="top" src="holder.js/100px160" />
-                                    <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
-                                        <Card.Text>
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                        </Card.Text>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <small className="text-muted">Last updated 3 mins ago</small>
-                                    </Card.Footer>
-                                </Card>
-                                <Card className="mx-2">
-                                    <Card.Img variant="top" src="holder.js/100px160" />
-                                    <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
-                                        <Card.Text>
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                        </Card.Text>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <small className="text-muted">Last updated 3 mins ago</small>
-                                    </Card.Footer>
-                                </Card>
-                                <Card className="mx-2">
-                                    <Card.Img variant="top" src="holder.js/100px160" />
-                                    <Card.Body>
-                                        <Card.Title>Card title</Card.Title>
-                                        <Card.Text>
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                        </Card.Text>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <small className="text-muted">Last updated 3 mins ago</small>
-                                    </Card.Footer>
-                                </Card>
-                            </CardGroup>
-                        </Stack>
+                        <Buku />
                     </section>
                     <section className="mb-5 py-5">
                     <h3 className="text-center my-5">Peminjam Terbanyak Bulan Ini</h3>

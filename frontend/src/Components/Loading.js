@@ -1,11 +1,11 @@
 import React from 'react';
 
-const DeskripsiBuku = () => {
+const Loading = () => {
     return (
         <div>
-            waaa
+            
         </div>
     );
 };
 
-export default DeskripsiBuku;
+export default Loading;

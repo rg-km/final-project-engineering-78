@@ -16,7 +16,7 @@ const BookCard = ({id, title, subtitle, author, thumbnail}) => {
             <Card className="mx-2">
                 <Card.Img variant="top" src={thumbnail} style={{ width: '10rem', padding: "1rem 0", margin: "0 auto"}} />
                 <Card.Body>
-                    <Card.Title style={{ fontSize: '14pt' }}>{title}</Card.Title>
+                    <Card.Title style={{ fontSize: '12pt' }}>{title}</Card.Title>
                     <Card.Text style={{ fontSize: '12pt' }}>Author : {
                         // author.map((author, index) => {
                         //     return (
@@ -27,9 +27,6 @@ const BookCard = ({id, title, subtitle, author, thumbnail}) => {
                     </Card.Text>
                     <Card.Text style={{ fontSize: '10pt' }}>{subtitle}</Card.Text>
                 </Card.Body>
-                <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
             </Card>
         </>
     )
