@@ -17,7 +17,7 @@ function App() {
         <Route path="/homeUser" element={<HomeUser />} />
         <Route path="/register" element={<Daftar />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/deksripsi" element={<DeskripsiBuku />} />
+        <Route path="/deskripsi/:bookId" element={<DeskripsiBuku />} />
       </Routes>
     </BrowserRouter>
   );

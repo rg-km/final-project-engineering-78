@@ -1,13 +1,16 @@
-import React, {useState, useEffetc, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import Beranda from '../Pages/Beranda';
 import BookCard from './BookCard';
 import { Stack, CardGroup } from 'react-bootstrap';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate, useParams} from 'react-router-dom'
+// import {useHistory} from 'history'
 
 const Buku = () => {
     const [bookList, setBookList] = useState([])
-    const [query, setQuery] = useState('')
+    const [loading, setLoading] = useState(false)
+    // const history = useHistory()
+    // const navigate = useNavigate()
 
     const getBookList = async () => {
         try {
@@ -20,26 +23,15 @@ const Buku = () => {
             console.log("error get book list",err)
         }
     }
-
-    const getBookDesc = async (data) => {
-        try {
-            const res = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyBLJZPpZGx-vdQFizW2wEGZaMVWQwNrO0c/${data}`)
-            setBookList(res.data.items)
-            // console.log(res.data.items)
-        } catch(err) {
-            console.log("error get book list",err)
-        }
-    }
-
+    
     useEffect(() => {
         getBookList()
-        getBookDesc()
         // console.log("hello")
     }, [])
 
-    // axios.get('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyBLJZPpZGx-vdQFizW2wEGZaMVWQwNrO0c&maxResults=5')
-    //         .then(res => setBookList(res.data.items))
-    //         .catch(err => console.log(err))
+    // const bookDetail = () => {
+    //     history.push(`/deskripsiBuku/${bookList.id}`)
+    // }
 
     return (
         <div>
@@ -50,21 +42,14 @@ const Buku = () => {
                         return (
                             <>
                                 <CardGroup style={{ width: '16rem'}}>
-                                    <Link to="/deskripsi" style={{ color: 'black'}} onClick={() => console.log("haii")}>
-                                        <BookCard 
-                                            key = {item.id}
-                                            id = {item.id}
-                                            thumbnail = {thumbnail}
-                                            title={item.volumeInfo.title}
-                                            subtitle={item.volumeInfo.subtitle}
-                                            author={item.volumeInfo.author}
-                                            Image={item.volumeInfo.imageLinks.smallThumbnail}
-                                            desc={item.volumeInfo.description}
-                                            publishDate={item.volumeInfo.publishedDate}
-                                            publisher={item.volumeInfo.publisher}
-                                            language={item.volumeInfo.language}
-                                            pageCount={item.volumeInfo.pageCount}
-                                        />     
+                                    <Link to={'/deskripsi/'+item.id} style={{ color: "black" }}>
+                                            <BookCard 
+                                                key = {item.id}
+                                                id = {item.id}
+                                                thumbnail = {thumbnail}
+                                                bookItem={item.volumeInfo}
+                                                // goDetail={bookDetail(item.id)}
+                                            />     
                                     </Link>
                                 </CardGroup>
                             </>

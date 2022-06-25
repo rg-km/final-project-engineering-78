@@ -13,13 +13,13 @@ import Beranda from "../Pages/Beranda";
 const Home = () => {
   return (
     <>
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <main>
         <Container>
           <Beranda />
         </Container>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
