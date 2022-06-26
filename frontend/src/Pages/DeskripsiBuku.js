@@ -10,9 +10,12 @@ const DeskripsiBuku = () => {
     const getBookDesc = async () => {
         
         try {
-            const res = await axios.get('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyBLJZPpZGx-vdQFizW2wEGZaMVWQwNrO0c&id='+bookId+'&maxResults=1')
-            setBookList(res.data.items)
-            // console.log(res.data.items)
+            // const res = await axios.get('https://www.googleapis.com/books/v1/volumes?key=AIzaSyAVRcDVCRp3UJOk9ICHmFc7zvNF7eFxndg&id='+bookId+'&maxResults=1')
+            const res = await axios.get('https://www.googleapis.com/books/v1/volumes/'+bookId+'?key=AIzaSyAVRcDVCRp3UJOk9ICHmFc7zvNF7eFxndg')
+            // const res = await axios.get(`https://localhost:3001/items/${bookId}`)
+            setBookList(res.data.volumeInfo)
+            console.log(res.data.volumeInfo)
+            console.log(bookId)
         } catch(err) {
             console.log("error get book list",err)
         }
@@ -20,36 +23,22 @@ const DeskripsiBuku = () => {
 
     useEffect(() => {
         getBookDesc()
-        // console.log("hello")
+        console.log("hello")
     }, [])
 
     return (
         <div>
-            {/* {console.log(bookId)} */}
             {
-                bookList?.map((item) => {
-                    let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail
-                    return (
-                        <>
-                            <BookDesc
-                                key = {item.id}
-                                id = {item.id}
-                                thumbnail = {thumbnail}
-                                bookItem={item.volumeInfo}
-                                // title={item.volumeInfo.title}
-                                // subtitle={item.volumeInfo.subtitle}
-                                // author={item.volumeInfo.author}
-                                // Image={item.volumeInfo.imageLinks.smallThumbnail}
-                                // desc={item.volumeInfo.description}
-                                // publishDate={item.volumeInfo.publishedDate}
-                                // publisher={item.volumeInfo.publisher}
-                                // language={item.volumeInfo.language}
-                                // pageCount={item.volumeInfo.pageCount}
-                            />
-                        </>
-                    )
-                })
-            }    
+                // console.log(bookList.title)
+                // let thumbnail = imageLinks && imageLinks.thumbnail
+            }
+            <BookDesc 
+                key = {bookId}
+                id = {bookId}
+                bookItem = {bookList}
+                image = {bookList.imageLinks}
+            />
+            {/* {console.log(bookId)} */}
         </div>
     );
 };

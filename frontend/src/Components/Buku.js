@@ -14,11 +14,10 @@ const Buku = () => {
 
     const getBookList = async () => {
         try {
-            const res = await axios.get('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyBLJZPpZGx-vdQFizW2wEGZaMVWQwNrO0c&maxResults=5')
-            // const res = await axios.get('https://jsonplaceholder.typicode.com/posts')
-            // const res = await axios.get('https://localhost:3000/posts')
+            const res = await axios.get('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyAVRcDVCRp3UJOk9ICHmFc7zvNF7eFxndg&maxResults=5')
+            // const res = await axios.get('https://localhost:3001/items')
             setBookList(res.data.items)
-            // console.log(res.data.items)
+            // console.log(res.data)
         } catch(err) {
             console.log("error get book list",err)
         }

@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap"
 import {Link, useNavigate, useParams} from 'react-router-dom'
 
-const BookCard = ({id, key, bookItem, thumbnail}) => {
+const BookCard = ({id, bookItem, thumbnail}) => {
     // console.log(book)
 
     return (
