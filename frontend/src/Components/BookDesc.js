@@ -106,7 +106,7 @@ const BookDesc = ({id, bookItem, image}) => {
             <div className="d-inline-flex justify-content-between">
                 <div className='mx-auto'>
                     {/* <Image src={image.thumbnail} style={{ width: '14rem'}} /> */}
-                    <Image src="" style={{ width: '14rem'}} />
+                    <Image src={image} style={{ width: '14rem'}} />
                 </div>
                 <div className='pl-5'>
                     <div className="d-inline-flex justify-content-between mx-5">

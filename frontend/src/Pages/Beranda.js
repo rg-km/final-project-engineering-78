@@ -38,6 +38,7 @@ const Beranda = () => {
                         <div>
                             <h2>Bangun masa depanmu dengan membaca!</h2>
                             <p>Ayo telusuri buku di EasyPerpus</p>
+                            <Link to="/ListBuku/"><button type="button" className="btn btn-dark">Telusuri Buku</button></Link>
                         </div>
                     </Stack>
                 </header>

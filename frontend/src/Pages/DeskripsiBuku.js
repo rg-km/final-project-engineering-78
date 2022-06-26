@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import {useParams} from 'react-router-dom'
 import BookDesc from '../Components/BookDesc';
+import NavigationBar from '../Components/NavigationBar';
+import Footer from '../Components/Footer';
 
 const DeskripsiBuku = () => {
     const [bookList, setBookList] = useState([]);
@@ -32,12 +34,14 @@ const DeskripsiBuku = () => {
                 // console.log(bookList.title)
                 // let thumbnail = imageLinks && imageLinks.thumbnail
             }
+            <NavigationBar />
             <BookDesc 
                 key = {bookId}
                 id = {bookId}
                 bookItem = {bookList}
-                image = {bookList.imageLinks}
+                image = {bookList.imageLinks && bookList.imageLinks.thumbnail}
             />
+            <Footer />
             {/* {console.log(bookId)} */}
         </div>
     );

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import Beranda from '../Pages/Beranda';
 import BookCard from './BookCard';
-import { Stack, CardGroup } from 'react-bootstrap';
+import { Stack, CardGroup, Flex } from 'react-bootstrap';
 import {Link, useNavigate, useParams} from 'react-router-dom'
 // import {useHistory} from 'history'
 
@@ -14,7 +14,7 @@ const Buku = () => {
 
     const getBookList = async () => {
         try {
-            const res = await axios.get('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyAVRcDVCRp3UJOk9ICHmFc7zvNF7eFxndg&maxResults=5')
+            const res = await axios.get('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyAVRcDVCRp3UJOk9ICHmFc7zvNF7eFxndg&maxResults=8')
             // const res = await axios.get('https://localhost:3001/items')
             setBookList(res.data.items)
             // console.log(res.data)
@@ -34,7 +34,7 @@ const Buku = () => {
 
     return (
         <div>
-            <Stack direction="horizontal" className="my-auto">
+            <div className="d-flex flex-wrap my-auto ">
                 {  
                     bookList?.map((item) => {
                         let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail
@@ -55,7 +55,7 @@ const Buku = () => {
                         )
                     })
                 }
-            </Stack>
+            </div>
         </div>
     );
 };

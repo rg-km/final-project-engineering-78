@@ -8,6 +8,7 @@ import HomeUser from "./Pages/HomeUser";
 import Daftar from "./Pages/Daftar";
 import Profile from "./Pages/Profile";
 import DeskripsiBuku from "./Pages/DeskripsiBuku";
+import Hero from "./Components/Hero";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/homeUser" element={<HomeUser />} />
+        <Route path="/ListBuku" element={<Hero />} />
         <Route path="/register" element={<Daftar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/deskripsi/:bookId" element={<DeskripsiBuku />} />
