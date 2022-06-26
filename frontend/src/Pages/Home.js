@@ -7,6 +7,9 @@ import "../bootstrap.min.css";
 import NavigationBar from "../Components/NavigationBar";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
+import BookCard from "../Components/BookCard";
+import Buku from "../Components/Buku";
+import Beranda from "../Pages/Beranda";
 
 const Home = () => {
   // // const getdata = async () => {
@@ -19,9 +22,9 @@ const Home = () => {
       <NavigationBar />
       <main>
         <Container>
+          <Beranda />
           {/* <Button onClick={getdata}>Tambah</Button>
           sdsad */}
-          <Hero />
         </Container>
       </main>
       <Footer />

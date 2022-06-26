@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "siapa@gmail.com",
+            "password": "123456",
+            "name": "Siapa",
+            "phone": "081234567890",
+            "role": "user",
+            "nim": "123456789",
+            "jurusan": "Matematika",
+            "fakultas": "MIPA",
+            "gender": "male",
+            "foto": "http://books.google.com/books/content?id=ppjUtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "bookSaved": [],
+            "bookBorrowed": []
+        },
+        {
+            "id": 2,
+            "email": "siassssspa@gmail.com",
+            "password": "1456",
+            "name": "Siaddddpa",
+            "phone": "083534567890",
+            "role": "user",
+            "nim": "123456789",
+            "jurusan": "ilmu komputer",
+            "fakultas": "MIPA",
+            "gender": "female",
+            "foto": "http://books.google.com/books/content?id=ppjUtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "bookSaved": [],
+            "bookBorrowed": []
+        },
+        {
+            "id": 3,
+            "email": "siaaaapa@gmail.com",
+            "password": "123456",
+            "name": "Siapa",
+            "phone": "081234567890",
+            "role": "user",
+            "nim": "123456789",
+            "jurusan": "Fisika",
+            "fakultas": "MIPA",
+            "gender": "male",
+            "foto": "http://books.google.com/books/content?id=ppjUtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "bookSaved": [],
+            "bookBorrowed": []
+        },
+        {
+            "id": 4,
+            "email": "wuhu@gmail.com",
+            "password": "123456",
+            "name": "Siapa",
+            "phone": "081234567890",
+            "role": "user",
+            "nim": "123456789",
+            "jurusan": "Ilmu Komunikasi",
+            "fakultas": "FISIP",
+            "gender": "female",
+            "foto": "http://books.google.com/books/content?id=ppjUtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+            "bookSaved": [],
+            "bookBorrowed": []
+        }
+    ]
+}
