@@ -121,28 +121,7 @@ const Daftar = () => {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
-                  <div className="form-group">
-                    <label className="col-form-label">Password</label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="password"
-                      placeholder="Ketik password anda"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label className="col-form-label">Confirm Password</label>
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="confirmPassword"
-                      placeholder="Ketik password anda kembali"
-                      value={confirmPassword}
-                      onChange={(e) => setConfirmPassword(e.target.value)}
-                    />
-                  </div>
+
                   <div className="form-group">
                     <label className="col-form-label">Jurusan</label>
                     <input
@@ -187,6 +166,28 @@ const Daftar = () => {
                       placeholder="Masukan foto anda"
                       value={foto}
                       onChange={(e) => setFoto(e.target.value)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label className="col-form-label">Password</label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="password"
+                      placeholder="Ketik password anda"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label className="col-form-label">Confirm Password</label>
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="confirmPassword"
+                      placeholder="Ketik password anda kembali"
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
                     />
                   </div>
                   <br></br>

@@ -88,7 +88,7 @@ const NavigationBar = () => {
                 <Nav.Link href="/register">
                   <i class="fa-solid fa-angle-right"></i> Daftar
                 </Nav.Link>
-                <Nav.Link href="#action2">
+                <Nav.Link href="/leaderboard">
                   <i class="fa-solid fa-angle-right"></i> Leaderboard Pustaka
                 </Nav.Link>
                 <Link to="/profile">

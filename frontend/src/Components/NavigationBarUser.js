@@ -39,10 +39,10 @@ const NavigationBarUser = () => {
                 <Link to="#action2">
                   <i class="fa-solid fa-angle-right"></i> Riwayat Peminjaman
                 </Link>
-                <Link to="">
+                <Link to="/bookSaved">
                   <i class="fa-solid fa-angle-right"></i> Book Saved
                 </Link>
-                <Link to="">
+                <Link to="/leaderboard">
                   <i class="fa-solid fa-angle-right"></i> Leaderboard Pustaka
                 </Link>
                 <Link to="">

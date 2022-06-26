@@ -9,6 +9,9 @@ import Daftar from "./Pages/Daftar";
 import Profile from "./Pages/Profile";
 import DeskripsiBuku from "./Pages/DeskripsiBuku";
 import Hero from "./Components/Hero";
+import LeaderBoard from "./Pages/LeaderBoard";
+import BookSaved from "./Pages/BookSaved";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
         <Route path="/register" element={<Daftar />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/deskripsi/:bookId" element={<DeskripsiBuku />} />
+        <Route path="/leaderboard" element={<LeaderBoard />} />
+        <Route path="/bookSaved" element={<BookSaved />} />
       </Routes>
     </BrowserRouter>
   );
