@@ -1,0 +1,869 @@
+{
+    "items": [
+        {
+            "id": "ppjUtAEACAAJ",
+            "etag": "lnI8WKJPLeI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ppjUtAEACAAJ",
+            "volumeInfo": {
+                "title": "Fullstack React",
+                "subtitle": "The Complete Guide to ReactJS and Friends",
+                "authors": [
+                    "Accomazzo Anthony",
+                    "Murray Nathaniel",
+                    "Ari Lerner"
+                ],
+                "publisher": "Fullstack.IO",
+                "publishedDate": "2017-03",
+                "description": "LEARN REACT TODAY The up-to-date, in-depth, complete guide to React and friends. Become a ReactJS expert today",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0991344626"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780991344628"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 836,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ppjUtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ppjUtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ppjUtAEACAAJ&dq=react&hl=&cd=1&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ppjUtAEACAAJ&dq=react&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Fullstack_React.html?hl=&id=ppjUtAEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ppjUtAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "LEARN REACT TODAY The up-to-date, in-depth, complete guide to React and friends. Become a ReactJS expert today"
+            }
+        },
+        {
+            "id": "RRLmDwAAQBAJ",
+            "etag": "Fj5N40ikLR0",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/RRLmDwAAQBAJ",
+            "volumeInfo": {
+                "title": "The Road to React",
+                "subtitle": "Your journey to master plain yet pragmatic React.js",
+                "authors": [
+                    "Robin Wieruch"
+                ],
+                "publisher": "Robin Wieruch",
+                "publishedDate": "2017-11-15",
+                "description": "LAST UPDATE: 09. June 2021 If you are looking for a comprehensive and pragmatic yet concise and up-to-date React.js feat. Hooks book, the Road to React is for you. What you will learn. In \"The Road to React\" you will learn about all the fundamentals of React.js with Hooks while building a full-blown React application step by step. While you create the React application, every chapter will introduce you to a new React key feature. However, there is more than only the fundamentals: The book dives into related topics (e.g. React with TypeScript, Testing, Performance Optimizations) and advanced feature implementations like client- and server-side searching. At the end of the book, you will have a fully working deployed React application. Is it up to date? Programming books are usually outdated soon after their release, but since this book is self- published, I can update it as needed whenever a new version of something related to this book gets released. I am a beginner. Is this book for me? Yes. The book starts from zero and takes you through the learning experience step by step. Every chapter builds up on the learnings from the previous chapter. In addition, at the end of every chapter, exercises fortify your lessons learned. If you got stuck in a chapter, you will always find a reference URL to the status quo of the actual code. Core Concepts Pragmatic: Master React while building a complete application step by step. Problems Solving: You need to experience a problem first before solving it. The Why: Readers like how the book answers the Why, not only the How. Table of Contents Fundamentals of React Hello React Requirements Setting up a React Project Meet the React Component React JSX Lists in React Meet another React Component React Component Instantiation ReactDOM React Component Definition (Advanced) Handler Function in JSX React Props React State Callback Handlers in JSX Lifting State in React React Controlled Components Props Handling (Advanced) React Side-Effects React Custom Hooks (Advanced) React Fragments Reusable React Component React Component Composition Imperative React Inline Handler in JSX React Asynchronous Data React Conditional Rendering React Advanced State React Impossible States Data Fetching with React Data Re-Fetching in React Memoized Handler in React (Advanced) Explicit Data Fetching with React Third-Party Libraries in React Async/Await in React (Advanced) Forms in React React's Legacy React Class Components React Class Components: State Imperative React Styling in React CSS in React CSS Modules in React Styled Components in React SVGs in React React Maintenance Performance in React (Advanced) TypeScript in React Unit Testing to Integration Testing React Project Structure Real World React (Advanced) Sorting Reverse Sort Remember Last Searches Paginated Fetch Deploying a React Application Build Process Deploy to Firebase",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781720043997"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "172004399X"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 252,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.9.9.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=RRLmDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=RRLmDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=RRLmDwAAQBAJ&pg=PP1&dq=react&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=RRLmDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=RRLmDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 29.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 29.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=RRLmDwAAQBAJ&rdid=book-RRLmDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 29990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 29990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=RRLmDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Programming books are usually outdated soon after their release, but since this book is self- published, I can update it as needed whenever a new version of something related to this book gets released. I am a beginner. Is this book for me?"
+            }
+        },
+        {
+            "id": "OCHEnQAACAAJ",
+            "etag": "luM+b+CLUYc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/OCHEnQAACAAJ",
+            "volumeInfo": {
+                "title": "React: Up & Running",
+                "subtitle": "Building Web Applications",
+                "authors": [
+                    "Stoyan Stefanov"
+                ],
+                "publishedDate": "2016-08-04",
+                "description": "Hit the ground running with React, the open-source technology from Facebook for building rich web applications fast. With this practical guide, Yahoo! web developer Stoyan Stefanov teaches you how to build components-React's basic building blocks-and organize them into maintainable, large-scale apps. If you're familiar with basic JavaScript syntax, you're ready to get started. Once you understand how React works, you'll build a complete custom Whinepad app that helps users rate wines and keep notes. You'll quickly learn why some developers consider React the key to the web app development puzzle. Set up React and write your first \"Hello world\" web app Create and use custom React components alongside generic DOM components Build a data table component that lets you edit, sort, search, and export its contents Use the JSX syntax extension as an alternative to function calls Set up a lean, low-level build process that helps you focus on React Build a complete custom app that lets you store data on the client Use ESLint, Flow, and Jest tools to check and test your code as your app evolves Manage communication between components with Flux",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1491931825"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781491931820"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 250,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=OCHEnQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=OCHEnQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=OCHEnQAACAAJ&dq=react&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=OCHEnQAACAAJ&dq=react&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/React_Up_Running.html?hl=&id=OCHEnQAACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=OCHEnQAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "With this practical guide, Yahoo web developer Stoyan Stefanov teaches you how to build components--React&#39;s basic building blocks--and organize them into maintainable, large-scale apps."
+            }
+        },
+        {
+            "id": "OswftAEACAAJ",
+            "etag": "FugFVo6+0yo",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/OswftAEACAAJ",
+            "volumeInfo": {
+                "title": "React. Js Book",
+                "subtitle": "Learning React JavaScript Library from Scratch",
+                "authors": [
+                    "Greg Sidelnikov"
+                ],
+                "publishedDate": "2017-03-17",
+                "description": "My fourth web development book is simply called React.js Book. It will walk you step by step through the process of setting up a development environment and learning Reactive programming from start to finish. React is a library unlike any other I have worked with. Unlike jQuery where you had to learn a number of methods that do very specific things, it's largely inspired by a programming methodology for creating fast web applications.In addition you will be expected to know or at least be briefly familiar with prerequisite knowledge of other web development tools such as Node.js, NPM, Babel, JSX and WebPack. These are not required elements of programming with React, but without them things would be tough.As of 2017, Reactive programming is an alternative way of thinking about web applications. It provides software patterns that make your web app extremely responsive to user input and generally feel faster to the end-user (people who are using your application.) The Virtual DOM alone is enough of a reason to switch to React. Programming with React library, is a lot more than just learning about and using React objects, components, states, props and methods. It requires previous experience with JavaScript and at times assumes knowledge of software principles not inherent to React library itself.This book is not a list of object names, methods and functions with side explanations of what they do. Rather, it deals with the said principles involved in React programming thought up by the creators of React library. Principles that are usually understood by professional web developers and software engineers.For all these reasons stated above, this book will gradually walk you through the process of becoming familiar with React library, starting from basic concepts. Gradually, we will move toward more advanced subjects. So, prepare to be educated",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1521546185"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781521546185"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 117,
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=OswftAEACAAJ&dq=react&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=OswftAEACAAJ&dq=react&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/React_Js_Book.html?hl=&id=OswftAEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=OswftAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "These are not required elements of programming with React, but without them things would be tough.As of 2017, Reactive programming is an alternative way of thinking about web applications."
+            }
+        },
+        {
+            "id": "tjjrDwAAQBAJ",
+            "etag": "tdbEtbtRRHU",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/tjjrDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Learning React",
+                "subtitle": "Modern Patterns for Developing React Apps",
+                "authors": [
+                    "Alex Banks",
+                    "Eve Porcello"
+                ],
+                "publisher": "\"O'Reilly Media, Inc.\"",
+                "publishedDate": "2020-06-12",
+                "description": "If you want to learn how to build efficient React applications, this is your book. Ideal for web developers and software engineers who understand how JavaScript, CSS, and HTML work in the browser, this updated edition provides best practices and patterns for writing modern React code. No prior knowledge of React or functional JavaScript is necessary. With their learning road map, authors Alex Banks and Eve Porcello show you how to create UIs that can deftly display changes without page reloads on large-scale, data-driven websites. You’ll also discover how to work with functional programming and the latest ECMAScript features. Once you learn how to build React components with this hands-on guide, you’ll understand just how useful React can be in your organization. Understand key functional programming concepts with JavaScriptLook under the hood to learn how React runs in the browserCreate application presentation layers with React componentsManage data and reduce the time you spend debugging applicationsIncorporate React Hooks to manage state and fetch dataUse a routing solution for single-page application featuresLearn how to structure React applications with servers in mind",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781492051671"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1492051675"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 310,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=tjjrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=tjjrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=tjjrDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=tjjrDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=tjjrDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 50.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 50.99,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=tjjrDwAAQBAJ&rdid=book-tjjrDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 50990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 50990000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=tjjrDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "If you want to learn how to build efficient React applications, this is your book."
+            }
+        },
+        {
+            "id": "pMTADgAAQBAJ",
+            "etag": "DvAzSySgp88",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/pMTADgAAQBAJ",
+            "volumeInfo": {
+                "title": "Learning React",
+                "subtitle": "Functional Web Development with React and Redux",
+                "authors": [
+                    "Alex Banks",
+                    "Eve Porcello"
+                ],
+                "publisher": "\"O'Reilly Media, Inc.\"",
+                "publishedDate": "2017-04-27",
+                "description": "If you want to learn how to build efficient user interfaces with React, this is your book. Authors Alex Banks and Eve Porcello show you how to create UIs with this small JavaScript library that can deftly display data changes on large-scale, data-driven websites without page reloads. Along the way, you’ll learn how to work with functional programming and the latest ECMAScript features. Developed by Facebook, and used by companies including Netflix, Walmart, and The New York Times for large parts of their web interfaces, React is quickly growing in use. By learning how to build React components with this hands-on guide, you’ll fully understand how useful React can be in your organization. Learn key functional programming concepts with JavaScript Peek under the hood to understand how React runs in the browser Create application presentation layers by mounting and composing React components Use component trees to manage data and reduce the time you spend debugging applications Explore React’s component lifecycle and use it to load data and improve UI performance Use a routing solution for browser history, bookmarks, and other features of single-page applications Learn how to structure React applications with servers in mind",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781491954577"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1491954574"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 350,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "0.2.5.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=pMTADgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=pMTADgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=pMTADgAAQBAJ&printsec=frontcover&dq=react&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=pMTADgAAQBAJ&dq=react&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Learning_React.html?hl=&id=pMTADgAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=pMTADgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "If you want to learn how to build efficient user interfaces with React, this is your book."
+            }
+        },
+        {
+            "id": "7KVYDwAAQBAJ",
+            "etag": "Xgt+esCs1ps",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/7KVYDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Learning React",
+                "subtitle": "A Hands-On Guide to Building Web Applications Using React and Redux",
+                "authors": [
+                    "Kirupa Chinnathambi"
+                ],
+                "publisher": "Addison-Wesley Professional",
+                "publishedDate": "2018-04-26",
+                "description": "Learning React A hands-on guide to building web applications using React and Redux As far as new web frameworks and libraries go, React is quite the runaway success. It not only deals with the most common problems developers face when building complex apps, it throws in a few additional tricks that make building the visuals for such apps much, much easier. What React isn’t, though, is beginner-friendly and approachable. Until now. In Learning React , author Kirupa Chinnathambi brings his fresh, clear, and very personable writing style to help web developers new to React understand its fundamentals and how to use it to build really performant (and awesome) apps. The only book on the market that helps you get your first React app up and running in just minutes, Learning React is chock-full of colorful illustrations to help you visualize difficult concepts and practical step-by-step examples to show you how to apply what you learn. Build your first React app Create components to define parts of your UI Combine components into other components to build more complex UIs Use JSX to specify visuals without writing full-fledged JavaScript Deal with maintaining state Work with React’s way of styling content Make sense of the mysterious component lifecycle Build multi-page apps using routing and views Optimize your React workflow using tools such as Node, Babel, webpack, and others Use Redux to make managing your app data and state easy Contents at a Glance 1 Introducing React 2 Building Your First React App 3 Components in React 4 Styling in React 5 Creating Complex Components 6 Transferring Properties 7 Meet JSX... Again! 8 Dealing with State in React 9 Going from Data to UI in React 10 Events in React 11 The Component Lifecycle 12 Accessing DOM Elements in React 13 Setting Up Your React Dev Environment 14 Working with External Data in React 15 Building an Awesome Todo List App in React 16 Creating a Sliding Menu in React 17 Avoiding Unnecessary Renders in React 18 Creating a Single-Page App in React Using React Router 19 Introduction to Redux 20 Using Redux with React",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780134843575"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0134843576"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 240,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.3.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=7KVYDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=7KVYDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=7KVYDwAAQBAJ&pg=PP1&dq=react&hl=&cd=7&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=7KVYDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7KVYDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 31.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 17.27,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=7KVYDwAAQBAJ&rdid=book-7KVYDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 31990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 17270000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Learning_React-sample-epub.acsm?id=7KVYDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Learning_React-sample-pdf.acsm?id=7KVYDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=7KVYDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The only book on the market that helps you get your first React app up and running in just minutes, Learning React is chock-full of colorful illustrations to help you visualize difficult concepts and practical step-by-step examples to show ..."
+            }
+        },
+        {
+            "id": "XCLhDwAAQBAJ",
+            "etag": "f8+bXWJSJOE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/XCLhDwAAQBAJ",
+            "volumeInfo": {
+                "title": "React and React Native",
+                "subtitle": "A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition",
+                "authors": [
+                    "Adam Boduch",
+                    "Roy Derks"
+                ],
+                "publisher": "Packt Publishing Ltd",
+                "publishedDate": "2020-04-30",
+                "description": "Get up to speed with React, React Native, GraphQL and Apollo for building cross-platform native apps with the help of practical examples Key Features Covers the latest features of React such as Hooks, Suspense, NativeBase, and Apollo in this updated third edition Get to grips with the React architecture for writing easy-to-manage web and mobile applications Understand GraphQL and Apollo for building a scalable backend for your cross-platform apps Book Description React and React Native, Facebook’s innovative User Interface (UI) libraries, are designed to help you build robust cross-platform web and mobile applications. This updated third edition is improved and updated to cover the latest version of React. The book particularly focuses on the latest developments in the React ecosystem, such as modern Hook implementations, code splitting using lazy components and Suspense, user interface framework components using Material-UI, and Apollo. In terms of React Native, the book has been updated to version 0.62 and demonstrates how to apply native UI components for your existing mobile apps using NativeBase. You will begin by learning about the essential building blocks of React components. Next, you’ll progress to working with higher-level functionalities in application development, before putting this knowledge to use by developing user interface components for the web and for native platforms. In the concluding chapters, you’ll learn how to bring your application together with a robust data architecture. By the end of this book, you’ll be able to build React applications for the web and React Native applications for multiple mobile platforms. What you will learn Delve into the React architecture, component properties, state, and context Get to grips with React Hooks for handling functions and components Implement code splitting in React using lazy components and Suspense Build robust user interfaces for mobile and desktop apps using Material-UI Write shared components for Android and iOS mobile apps using React Native Simplify layout design for React Native apps using NativeBase Write GraphQL schemas to power web and mobile apps Implement web and mobile components that are driven by Apollo Who this book is for This book is for any JavaScript developer who wants to start learning how to use Facebook’s UI libraries, React and React Native, for mobile and web application development. Although no prior knowledge of React is needed, working knowledge of JavaScript programming will help you understand the concepts covered in the book more effectively.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781839212437"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1839212438"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 526,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.3.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=XCLhDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=XCLhDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=XCLhDwAAQBAJ&printsec=frontcover&dq=react&hl=&cd=8&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=XCLhDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=XCLhDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 35.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 22.39,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=XCLhDwAAQBAJ&rdid=book-XCLhDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 35990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 22390000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=XCLhDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Get up to speed with React, React Native, GraphQL and Apollo for building cross-platform native apps with the help of practical examples Key Features Covers the latest features of React such as Hooks, Suspense, NativeBase, and Apollo in ..."
+            }
+        },
+        {
+            "id": "viIvEAAAQBAJ",
+            "etag": "wqZho7AbR18",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/viIvEAAAQBAJ",
+            "volumeInfo": {
+                "title": "React 17 Design Patterns and Best Practices",
+                "subtitle": "Design, build, and deploy production-ready web applications using industry-standard practices, 3rd Edition",
+                "authors": [
+                    "Carlos Santana Roldan"
+                ],
+                "publisher": "Packt Publishing Ltd",
+                "publishedDate": "2021-05-17",
+                "description": "React is an open-source JavaScript library that is used for building user interfaces or UI components. This React book is designed to take you through the most valuable design patterns in React, helping you learn how to apply design patterns and best practices in real-world scenarios.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781800561762"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1800561768"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 394,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=viIvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=viIvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=viIvEAAAQBAJ&pg=PP1&dq=react&hl=&cd=9&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=viIvEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=viIvEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 31.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 19.79,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=viIvEAAAQBAJ&rdid=book-viIvEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 31990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 19790000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=viIvEAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Build scalable, maintainable, and powerful React web apps with design patterns and insightful best practices Key Features Make the most of design patterns in React – including render props and controlled and uncontrolled inputs Master ..."
+            }
+        },
+        {
+            "id": "Rhl1CgAAQBAJ",
+            "etag": "k6tHBpDwARI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/Rhl1CgAAQBAJ",
+            "volumeInfo": {
+                "title": "React.js Essentials",
+                "authors": [
+                    "Artemij Fedosejev"
+                ],
+                "publisher": "Packt Publishing Ltd",
+                "publishedDate": "2015-08-27",
+                "description": "A fast-paced guide to designing and building scalable and maintainable web apps with React.js About This Book Build maintainable and performant user interfaces for your web applications using React.js Create reusable React.js components to save time and effort in maintaining your user interfaces Learn how to build a ready-to-deploy React.js web application, following our step-by-step tutorial Who This Book Is For If you're a front-end developer with knowledge of jQuery and its libraries, along with frameworks, such as Angular.JS and Backbone.JS, or native JavaScript development, and you wish to use the fastest web user interface library there is, then this book is ideal for you. What You Will Learn Install powerful React.js tools to make development much more efficient Create React elements with properties and children Get started with stateless and stateful React components Use JSX to speed up your React.js development process Add reactivity to your React components with lifecycle methods Integrate your React components with other JavaScript libraries Utilize the Flux application architecture with your React components Test your React components with Jest test framework In Detail Building web applications with maintainable and performant user interfaces is a challenge that many have faced for more than a decade, but no one has risen to this challenge quite like React.js. Today React.js is used by Facebook, Instagram, Khan Academy, and Imperial College London, to name a few. Many new users recognize the benefits of React.js and adopt it in their own projects, forming a fast-growing community. The speed at which React.js has evolved promises a bright future for those who invest in learning it today. React.js Essentials will take you on a fast-paced journey through building your own maintainable React.js application. Begin by exploring how you can create single and multiple user interface elements. Create stateless and stateful components and make them reactive, learn to interact between your components and lifecycle methods and gauge how to effectively integrate your user interface components with other JavaScript libraries. Delve deep into the core elements of the Flux architecture and learn how to manage your application using stores. Finish by going that extra mile with the Jest test framework, running multiple tests on your application and find solutions to scale it further without complexity. Style and approach The book adopts a step-by-step, hands-on approach with ample codes to ensure you learn React.js at a fast pace.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781782174622"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1782174621"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 208,
+                "printType": "BOOK",
+                "categories": [
+                    "Computers"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.1.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=Rhl1CgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=Rhl1CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=Rhl1CgAAQBAJ&pg=PP1&dq=react&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=Rhl1CgAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Rhl1CgAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 23.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 14.59,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=Rhl1CgAAQBAJ&rdid=book-Rhl1CgAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 23990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 14590000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Rhl1CgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "A fast-paced guide to designing and building scalable and maintainable web apps with React.js About This Book Build maintainable and performant user interfaces for your web applications using React.js Create reusable React.js components to ..."
+            }
+        }
+    ]
+}

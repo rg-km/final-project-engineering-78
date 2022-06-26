@@ -8,6 +8,7 @@ import {
   Form,
   Button,
   Offcanvas,
+  Image,
 } from "react-bootstrap";
 //import Daftar from "../Pages/Daftar";
 const NavigationBarUser = () => {
@@ -17,7 +18,7 @@ const NavigationBarUser = () => {
         <Nav>
           <Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <>EasyPerpus</>
+            <Link to="/" style={{ color: "black", fontWeight: "600"}} className="mx-2">Easy Perpus</Link>
           </Navbar.Brand>
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-${expand}`}
