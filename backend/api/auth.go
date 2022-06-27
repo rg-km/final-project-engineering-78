@@ -126,7 +126,7 @@ func (api *API) register (w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = api.usersRepo.Register(user.Username, user.Password)
+	err = api.usersRepo.InsertUser(user.Username, user.Password, "user", false)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		return
