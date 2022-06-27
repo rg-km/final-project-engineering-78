@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import {
     Stack,
     Image,
-    Flex,
     CardGroup,
+    Form,
+    Button,
+    Modal,
 } from "react-bootstrap"
 import axios from 'axios';
 import {Link, useNavigate, useParams} from 'react-router-dom'
@@ -13,6 +15,8 @@ import BookBorrowed from '../Pages/BookSaved';
 const BookDesc = ({id, bookItem, image}) => {
     const [bookSavedList, setBookSavedList] = useState([])
     const [bookBorrowedList, setBookBorrowedList] = useState([])
+    const [formValues, setFormValues] = useState({})
+    const [formModalType, setFormModalType] = useState("")
     const [loading, setLoading] = useState(false)
     const [ampersand, setAmpersand] = useState('&')
     const [doubleQuote, setDoubleQuote] = useState('"')
@@ -20,6 +24,15 @@ const BookDesc = ({id, bookItem, image}) => {
     const [lessThan, setLessThan] = useState('<')
     const [greaterThan, setGreaterThan] = useState('>')
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => {
+        setFormModalType("ADD")
+        setShow(false)
+    };
+    const handleShow = () => setShow(true);
+
+    //hmtl
     const htmlSpecialChars = (str) => {
         return str
             .replace(ampersand, '&amp;')
@@ -31,72 +44,33 @@ const BookDesc = ({id, bookItem, image}) => {
 
     //note : nanti rapikan dengan useContext
 
-    //book saved list
-    const handleBookSaved = async () => {
-        // try {
-        //     //ganti link api nya nanti
-        //     const bookRes = await axios.post('https://localhost:3001/users/bookSaved', {})
-        //     if (bookRes.status === 200) {
-        //         setBookSavedList(bookRes.data)
-        //     }
-        // } catch (err) {
-        //     console.log("error post book saved", err)
-        // }
-
-        return (
-            <>
-                {bookSavedList.map((item) => {
-                    return (
-                        <>
-                            <CardGroup style={{ width: '16rem'}}>
-                                <Link to={'/deskripsi/'+item.id} style={{ color: "black" }}>
-                                        <BookSaved 
-                                            key = {item.id}
-                                            id = {item.id}
-                                            // thumbnail = {thumbnail}
-                                            bookItem={item.volumeInfo}
-                                        />     
-                                </Link>
-                            </CardGroup>
-                        </>
-                    )
-                })}
-            </>
-        )
+    const handleInputChange = (event) => {
+        const {type, value} = event.target
+        setFormValues((prevValues) => ({
+            ...prevValues,
+            [type]: value
+        }))
     }
 
-    //pinjam buku
-    const handleBookBorrow = async () => {
-        // try {
-        //     //ganti link api nya nanti
-        //     const bookRes = await axios.post('https://localhost:3001/users/bookBorrowed', {})
-        //     if (bookRes.status === 200) {
-        //         setBookBorrowedList(bookRes.data)
+    const handleSubmit = (event) => {
+        // if (formModalType == "ADD") {
+        //     try {
+        //         const bookRes = await axios.post('https://localhost:3001/users', formValues)
+        //         if (bookRes.status == 200) {
+        //             setBookBorrowedList([...bookBorrowedList, formValues])
+        //         }
+        //     } catch (err) {
+        //         console.log("error fetch book by id", err)
         //     }
-        // } catch (err) {
-        //     console.log("error post book saved", err)
+        // } else {
+        //     try {
+        //         const bookRes = await axios.post('https://localhost:3001/users', formValues)
+        //         if (bookRes.status == 200) {
+        //             setBookSavedList([...bookSavedList, formValues])
+        //         }
+        //     } catch (err) {
+        //         console.log("error fetch book by id", err)
         // }
-
-        return (
-            <>
-                {bookBorrowedList.map((item) => {
-                    return (
-                        <>
-                            <CardGroup style={{ width: '16rem'}}>
-                                <Link to={'/deskripsi/'+item.id} style={{ color: "black" }}>
-                                        <BookBorrowed 
-                                            key = {item.id}
-                                            id = {item.id}
-                                            // thumbnail = {thumbnail}
-                                            bookItem={item.volumeInfo}
-                                        />     
-                                </Link>
-                            </CardGroup>
-                        </>
-                    )
-                })}
-            </>
-        )
     }
 
     return (
@@ -159,11 +133,78 @@ const BookDesc = ({id, bookItem, image}) => {
                             </div>
                         </div>
                         <Stack direction="vertical" gap={3}>
-                            <button type="button" className="btn btn-outline-dark" onClick={handleBookBorrow}>Pinjam Buku</button>
+                            <button type="button" className="btn btn-outline-dark" onClick={handleShow}>Pinjam Buku</button>
+                            <Modal show={show} onHide={handleClose}>
+                                <Modal.Title className="text-center">Pinjam Buku</Modal.Title>
+                                <Modal.Body>
+                                    <Form>
+                                    <Form.Group
+                                        className="mb-3"
+                                        controlId="exampleForm.ControlEmail"
+                                    >
+                                        <Form.Label>Judul Buku</Form.Label>
+                                        <Form.Control
+                                        id="title"
+                                        type="title"
+                                        value={bookItem.title}
+                                        // id="disabledTextInput"
+                                        // class="form-control"
+                                        // placeholder="Ketik Email anda"
+                                        autoFocus
+                                        />
+                                    </Form.Group>
+                                    <Form.Group
+                                        className="mb-3"
+                                        controlId="exampleForm.ControlEmail"
+                                    >
+                                        <Form.Label>Penulis</Form.Label>
+                                        <Form.Control
+                                        id="author"
+                                        type="author"
+                                        value={bookItem.authors}
+                                        // placeholder="Ketik Email anda"
+                                        autoFocus
+                                        />
+                                    </Form.Group>
+                                    <Form.Group
+                                        className="mb-3"
+                                        controlId="exampleForm.ControlEmail"
+                                    >
+                                        <Form.Label>Nama</Form.Label>
+                                        <Form.Control
+                                        id="nameUser"
+                                        type="nameUser"
+                                        onChange={handleInputChange}
+                                        // placeholder="Ketik Email anda"
+                                        autoFocus
+                                        />
+                                    </Form.Group>
+                                    <Form.Group
+                                        className="mb-3"
+                                        controlId="exampleForm.ControlEmail"
+                                    >
+                                        <Form.Label>NIM</Form.Label>
+                                        <Form.Control
+                                        id="nim"
+                                        type="nim"
+                                        onChange={handleInputChange}
+                                        // placeholder="Ketik Email anda"
+                                        autoFocus
+                                        />
+                                    </Form.Group>
+                                    <Form.Group className="text-center">
+                                        <Button variant="primary" onClick={handleClose}>
+                                        Pinjam BUku
+                                        </Button>
+                                    </Form.Group>
+                                    </Form>
+                                </Modal.Body>
+                                <Modal.Footer className="text-center"></Modal.Footer>
+                            </Modal>
                             <button 
                                 type="button" 
                                 className="btn btn-dark" 
-                                onClick={handleBookSaved}
+                                onClick={handleSubmit}
                             >
                             + Save
                             </button>
@@ -184,29 +225,30 @@ const BookDesc = ({id, bookItem, image}) => {
                 <table className="table">
                     <thead>
                         <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama User</th>
+                        <th scope="col">Tanggal peminjaman</th>
+                        <th scope="col">Tanggal pengembalian</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>20-7-2022</td>
+                            <td>27-7-2022</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td>22-7-2022</td>
+                            <td>29-7-2022</td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <th scope="row">2</th>
+                            <td>Jacobssss</td>
+                            <td>24-7-2022</td>
+                            <td>31-7-2022</td>
                         </tr>
                     </tbody>
                 </table>
