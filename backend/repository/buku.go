@@ -4,40 +4,39 @@ import (
 	"database/sql"
 )
 
-
 /*
-		ID          int    `db:"id"`
-		ISBN        int    `db:"isbn"`
-		Judul       string `db:"judul"`
-		Pengarang   string `db:"pengarang"`
-		Penerbit    string `db:"penerbit"`
-		Tahun       string `db:"tahun"`
-		Stok        int    `db:"stok"`
-		KotaTerbit  string `db:"kotaTerbit"`
-		Deskripsi   string `db:"deskripsi"`
-		Gambar      string `db:"gambar"`
-	
+	ID          int    `db:"id"`
+	ISBN        int    `db:"isbn"`
+	Judul       string `db:"judul"`
+	Pengarang   string `db:"pengarang"`
+	Penerbit    string `db:"penerbit"`
+	Tahun       string `db:"tahun"`
+	Stok        int    `db:"stok"`
+	KotaTerbit  string `db:"kotaTerbit"`
+	Deskripsi   string `db:"deskripsi"`
+	Gambar      string `db:"gambar"`
+
 */
 
-type BukuRepository interface {
-	FetchBukuByID(id int64) (Buku, error)
-	FetchBukus() ([]Buku, error)
-	InsertBuku(buku Buku) error
-	UpdateBuku(buku Buku) error
-	DeleteBuku(id int64) error
-	
-}
+// type BukuRepository interface {
+// 	FetchBukuByID(id int64) (Buku, error)
+// 	FetchBukus() ([]Buku, error)
+// 	InsertBuku(buku Buku) error
+// 	UpdateBuku(buku Buku) error
+// 	DeleteBuku(id int64) error
 
-type buku struct {
+// }
+
+type BukuRepository struct {
 	db *sql.DB
 }
 
-func NewBukuRepository (db *sql.DB) BukuRepository {
-	return &buku{db}
+func NewBukuRepository(db *sql.DB) *BukuRepository {
+	return &BukuRepository{db}
 }
 
 //GetAllBuku
-func (b *buku) FetchBukus() ([]Buku, error) {
+func (b *BukuRepository) FetchBukus() ([]Buku, error) {
 	var bukus []Buku
 	rows, err := b.db.Query("SELECT * FROM buku")
 	if err != nil {
@@ -55,9 +54,8 @@ func (b *buku) FetchBukus() ([]Buku, error) {
 	return bukus, nil
 }
 
-
 //GetBukuByID
-func (b *buku) FetchBukuByID(id int64) (Buku, error) {
+func (b *BukuRepository) FetchBukuByID(id int64) (Buku, error) {
 	var buku Buku
 	err := b.db.QueryRow("SELECT * FROM buku WHERE id=?", id).Scan(&buku.ID, &buku.ISBN, &buku.Judul, &buku.Pengarang, &buku.Penerbit, &buku.Tahun, &buku.Stok, &buku.KotaTerbit, &buku.Deskripsi, &buku.Gambar)
 	if err != nil {
@@ -66,9 +64,8 @@ func (b *buku) FetchBukuByID(id int64) (Buku, error) {
 	return buku, nil
 }
 
-
 //InsertBuku
-func (b *buku) InsertBuku(buku Buku) error {
+func (b *BukuRepository) InsertBuku(buku Buku) error {
 	_, err := b.db.Exec("INSERT INTO buku (isbn, judul, pengarang, penerbit, tahun, stok, kotaTerbit, deskripsi, gambar) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", buku.ISBN, buku.Judul, buku.Pengarang, buku.Penerbit, buku.Tahun, buku.Stok, buku.KotaTerbit, buku.Deskripsi, buku.Gambar)
 	if err != nil {
 		return err
@@ -76,9 +73,8 @@ func (b *buku) InsertBuku(buku Buku) error {
 	return nil
 }
 
-
 //UpdateBuku
-func (b *buku) UpdateBuku(buku Buku) error {
+func (b *BukuRepository) UpdateBuku(buku Buku) error {
 	_, err := b.db.Exec("UPDATE buku SET isbn=?, judul=?, pengarang=?, penerbit=?, tahun=?, stok=?, kotaTerbit=?, deskripsi=?, gambar=? WHERE id=?", buku.ISBN, buku.Judul, buku.Pengarang, buku.Penerbit, buku.Tahun, buku.Stok, buku.KotaTerbit, buku.Deskripsi, buku.Gambar, buku.ID)
 	if err != nil {
 		return err
@@ -86,9 +82,8 @@ func (b *buku) UpdateBuku(buku Buku) error {
 	return nil
 }
 
-
 //DeleteBuku
-func (b *buku) DeleteBuku(id int64) error {
+func (b *BukuRepository) DeleteBuku(id int64) error {
 	_, err := b.db.Exec("DELETE FROM buku WHERE id=?", id)
 	if err != nil {
 		return err
@@ -96,9 +91,8 @@ func (b *buku) DeleteBuku(id int64) error {
 	return nil
 }
 
-
 //search buku
-func (b *buku) SearchBuku(search string) ([]Buku, error) {
+func (b *BukuRepository) SearchBuku(search string) ([]Buku, error) {
 	var bukus []Buku
 	rows, err := b.db.Query("SELECT * FROM buku WHERE judul LIKE ?", "%"+search+"%")
 	if err != nil {
