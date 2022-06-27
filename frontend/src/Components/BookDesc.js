@@ -32,6 +32,7 @@ const BookDesc = ({id, bookItem, image}) => {
     };
     const handleShow = () => setShow(true);
 
+    //hmtl
     const htmlSpecialChars = (str) => {
         return str
             .replace(ampersand, '&amp;')
@@ -69,7 +70,6 @@ const BookDesc = ({id, bookItem, image}) => {
         //         }
         //     } catch (err) {
         //         console.log("error fetch book by id", err)
-            
         // }
     }
 
