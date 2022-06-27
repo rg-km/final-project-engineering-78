@@ -11,7 +11,6 @@ import DeskripsiBuku from "./Pages/DeskripsiBuku";
 import Hero from "./Components/Hero";
 import LeaderBoard from "./Pages/LeaderBoard";
 import BookSaved from "./Pages/BookSaved";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
